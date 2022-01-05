@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var n1 = Number(window.prompt(`qual o seu desejo salarial?`))
+        var nome = window.prompt("qual seu nome?")
+
+        document.write(
+            `olá, <strong> ${nome} </strong> ! seu nome tem ${nome.length} letras <br/>`) // tamanho do nome nome.length()
+        document.write(
+            `seu nome em letras maiusculas é ${nome.toUpperCase()}<br/>`) // para colocar tudo para a letra maiuscula nome.toUpperCase()
+        document.write(
+            `seu nome em letras minusculas é ${nome.toLowerCase()}<br/>`) // pata colocar tudo para a letra nimunscula nome.toLowerCase()
+
+        document.write(`salarial ${n1.toFixed(2)}<br/>`) // duas casas decimais coloca ponto n1.toFixed()
+        document.write(
+            `taxa salarial${n1.toFixed(2).replace('.',',')}<br />`) // coloca uma , no lugar do ponto n1.toFixed(2).replace('.',',')
+        document.write(`Faixa salarial${n1.toLocaleString('pt-Br',{style:'currency', currency:'BRL'})}<br/>`)
+    </script>
+</body>
+
+</html>
