@@ -12,6 +12,10 @@
 
             background: rgb(42, 139, 42);
             color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
 
         }
     </style>
@@ -19,8 +23,32 @@
 
 <body>
     <div id="area">
+        <!--dentro de div : onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()"-->
         interaja...
     </div>
+
+    <script>
+        var a = window.document.getElementById('area')
+        a.addEventListener('click', clicar) // substitui o que foi comentado
+        a.addEventListener('mouseenter', entrar) // substitui o que foi comentado
+        a.addEventListener('mouseout', sair) // substitui o que foi comentado
+
+        function clicar() {
+            a.innerText = 'clicou!'
+            a.style.background = 'red'
+        }
+
+        function entrar() {
+            a.innerText = 'entrou!'
+        }
+
+        function sair() {
+            a.innerText = 'saiu!'
+            a.style.background = 'green'
+        }
+    </script>
+
+
 </body>
 
 </html>
