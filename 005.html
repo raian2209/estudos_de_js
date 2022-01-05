@@ -6,10 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            background: rgb(66, 104, 153);
+            color: white;
+            font: normal 18pt arial;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>iniciar studio m</h1>
+    <h1>iniciar estudo em dom </h1>
+    <p>Aqui vai o resultado</p>
+    <p>aprenda a usar o <strong>DOM</strong> em Java Script</p>
+    <div id="msg"> clique em mim</div>
 </body>
+<script>
+    var corpo = window.document.body
+    var p1 = window.document.getElementsByTagName('p')[1]
+
+    /*
+    var d = window.document.getElementById('msg')
+    var d = window.documentgetElementsByName('msg')[0]
+
+    p1.style.color = 'blue'
+    d.style.background = 'green'
+    d.innerText = 'estou aguardando...'
+
+    document.write(p1.innerText)
+    document.write(p1.innerHTML)
+    */
+    var d = window.document.querySelector('div#msg') // id # classe .
+    d.style.background = 'blue'
+</script>
 
 </html>
